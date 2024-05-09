@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 0.875rem;
     font-weight: 900;
     color: #333;
 }
@@ -14,7 +14,7 @@ h1 {
 .navbar{
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 2em;
 }
 
 a {
@@ -22,6 +22,7 @@ a {
     font-weight: 400;
     text-decoration: none;
     color: black;
+    font-size: 0.75em;
 }
 
 header {
@@ -33,4 +34,42 @@ header {
 .nav-logo {
     display: flex;
     align-items: center;
+    gap: 0.3rem;
+}
+
+footer {
+    color: white;
+    background-color: #202020;
+    width: 100vw;
+    height: 6.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.75rem;
+}
+
+.footer-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.blogs-available {
+    display: grid;
+    grid-template: repeat(3, 60vw) / repeat(3, 30vw);
+    gap: 0.3rem 0.6rem;
+    justify-content: center;
+}
+
+.blogs-available img {
+    width: 19.3rem;
+    height: 14.5rem;
+}
+
+.footer-text p {
+    margin: 0;
 }
