@@ -60,16 +60,34 @@ footer {
 
 .blogs-available {
     display: grid;
-    grid-template: repeat(3, 60vw) / repeat(3, 30vw);
-    gap: 0.3rem 0.6rem;
+    grid-template-columns: 80vw 20vw; 
+    grid-template-rows: repeat(4, 30vh);
+    /* gap: 0.3rem 0.6rem; */
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .blogs-available img {
-    width: 19.3rem;
-    height: 14.5rem;
+    grid-column: span 1;
+    /* width: 23.375rem; */
+    height: 40vh;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-text p {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .blogs-available {
+        /* 3 rows / 3 columns */
+        grid-template: repeat(3, 60vw) / repeat(3, 30vw); 
+    }
+
+    .blogs-available img {
+        width: 15rem;
+        height: 11.25rem;
+    }
 }
