@@ -58,76 +58,39 @@ footer {
     margin-top: 1.5rem;
 }
 
-
-/* display: grid;
-    grid-template-columns: 4fr 1fr; 
-    grid-template-rows: repeat(4, 50px);
-    grid-template-areas: 
-        "image1 image2"
-        "image1 image3"
-        "image4 image5"
-        "image4 image6";
-    justify-content: center;
-    margin: 0;
-    padding: 0; */
-
-    /*
-    cImg means  centeral/main image
-    sImg means  secondary image
-    */
 .blogs-available {
     display: grid;
     grid-template-areas: 
-        "cImg cImg cImg" 
-        "..... sImg1 .....";
-        /* "..... sImg1 ....."; */
-    grid-template-columns: 10vw 80vw 10vw;
-    /* max-width: 100vw; */
-    /* overflow: hidden; */
-    grid-template-rows: repeat(4, 50px);
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* gap: 0.3rem 0.6rem; */
-    /* justify-content: center; */
-    margin: 0;
-    padding: 0;
+    "himg himg himg"
+    "simg simg simg";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    height: 300px;
+    width: 300px;
 }
 
-/* .blogs-available .small-img { */
-    /* grid-column: span 1;
-    grid-row: span 2;
-    margin: auto; */
-    /* grid-column: 1 / span 2; */
-    /* width: 100%;
-    height: 100%; */
-    /* width: 23.375rem; */
-    /* height: 40vh; */
-    /* margin: 0;
-    padding: 0; */
-/* } */
-
-.blogs-available .small-img-1 {
-    grid-area: sImg1;
-    width: 100;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.large-img-blog-holder {
+    padding: 2em 1em 2em 1em;
 }
 
-.blogs-available .large-img {
-    grid-area: cImg;
-    width: 100;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* grid-column: span 2; */
-    /* grid-row: span 2; */
-    /* width: 100%; */
-    /* height: 100%; */
-    /* width: 23.375rem; */
-    /* height: 40vh; */
-    /* margin: 0;
-    padding: 0; */
+.small-img-blog-holder {
+    padding: 2em 1em 2em 1em;
+}
+
+.large-img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* hero image */
+    grid-area: himg; 
+}
+
+.small-img {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* small blog image */
+    grid-area: simg; 
 }
 
 .footer-text p {
