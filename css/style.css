@@ -65,7 +65,7 @@ footer {
     "simg simg simg";
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
 }
 
@@ -76,6 +76,7 @@ footer {
 
 .small-img-blog-holder {
     padding: 2em 1em 2em 1em;
+    border: black 2px solid;
     grid-area: simg;
 }
 
