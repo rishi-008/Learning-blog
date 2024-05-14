@@ -65,32 +65,33 @@ footer {
     "simg simg simg";
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
-    height: 300px;
-    width: 300px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .large-img-blog-holder {
-    padding: 2em 1em 2em 1em;
+    /* padding: 2em 1em 2em 1em; */
+    grid-area: himg;
 }
 
 .small-img-blog-holder {
     padding: 2em 1em 2em 1em;
+    grid-area: simg;
 }
 
 .large-img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background-color: red;
     /* hero image */
-    grid-area: himg; 
+     
 }
 
-.small-img {
-    width: 100px;
-    height: 100px;
+.small-img-1 {
+    width: 100%;
+    height: 100%;
     background-color: blue;
-    /* small blog image */
-    grid-area: simg; 
+    /* small blog image */ 
 }
 
 .footer-text p {
