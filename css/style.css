@@ -59,30 +59,37 @@ footer {
 }
 
 .blogs-available {
-    display: grid;
-    grid-template-areas: 
+    display: flex;
+    /* grid-template-areas: 
     "himg himg himg"
-    "simg simg simg";
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto;
-    height: 80vh;
-    width: 100vw;
+    "simg simg simg"; */
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto; */
+    /* 80% of the viewport height since doing more wouldn't account for the height that the footer occupied */
+    /* height: 80vh; 
+    width: 100vw; */
 }
 
-.large-img-blog-holder {
+.large-img-blog-container {
     /* padding: 2em 1em 2em 1em; */
-    grid-area: himg;
+    /* grid-area: himg; */
+    display: relative;
+}
+
+.large-blog-summary {
+    position: absolute;
 }
 
 .small-img-blog-holder {
     padding: 2em 1em 2em 1em;
-    border: black 2px solid;
+    /* border: black 2px solid; */
     grid-area: simg;
 }
 
 .large-img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     background-color: red;
     /* hero image */
      
