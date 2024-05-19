@@ -69,7 +69,13 @@ main {
     /* grid-template-rows: auto auto auto; */
     grid-template-areas: 
         "mimg mimg mimg"
-        "simg simg simg";
+        "simg simg simg"
+        "simg2 simg2 simg2"
+        "simg3 simg3 simg3"
+        "simg4 simg4 simg4"
+        ;
+    height: 20vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -77,7 +83,7 @@ main {
 .large-img-blog-container {
     margin: 0;
     padding: 0;
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     /* grid-column: span 3; */
     position: relative;
@@ -91,7 +97,7 @@ main {
     gap: 0.5em;
     position: absolute;
     top: 5rem;
-    left: 0;
+    left: 1rem;
 }
 
 time, h2, p {
@@ -99,10 +105,26 @@ time, h2, p {
 }
 
 .small-img-blog-holder {
-    padding: 2em 1em 2em 1em;
     grid-area: simg;
-    height: 20vh;
+}
+
+.small-img-blog-holder, .small-img-blog-holder-2, .small-img-blog-holder-3, .small-img-blog-holder-4 {
+    padding: 2em 1em 2em 1em;
+    height: 30vh;
     width: 92vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.small-img-blog-holder-2 {
+    grid-area: simg2;
+}
+.small-img-blog-holder-3 {
+    grid-area: simg3;
+}
+.small-img-blog-holder-4 {
+    grid-area: simg4;
 }
 
 .large-img {
