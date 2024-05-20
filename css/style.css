@@ -42,9 +42,9 @@ footer {
     background-color: #202020;
     width: 100vw;
     height: 6.5rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* left: 0; */
     font-size: 0.75rem;
 }
 
@@ -55,6 +55,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding-top: 1.5rem;
     margin-top: 1.5rem;
 }
 
@@ -65,6 +66,11 @@ main {
 
 .blogs-available {
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    /* flex-direction: column; */
+    /* display: grid;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 30vh auto auto auto 40vh;
     grid-template-areas: 
@@ -73,14 +79,13 @@ main {
         "simg2 simg2 simg2"
         "simg3 simg3 simg3"
         "simg4 simg4 simg4"
-        ;
+        ; */
     /* height: 20vh; */
     /* max-height: 80vh; */
     /* overflow: hidden; */
     /* width: 100vw; */
     margin: 0;
     padding: 0;
-    border: solid 1px red;
 }
 
 .large-img-blog-container {
@@ -153,11 +158,14 @@ time, h2, p {
     /* background-color: #202020;
     color: white; */
     border: none;
+    background: none;
+    text-decoration: underline;
     padding: 0.5em 1em 0.5em 1em;
     font-size: 0.75em;
     font-weight: 900;
     cursor: pointer;
-    border: solid 1px red;
+    display: block;
+    margin: 0 auto;
 }
 
 .footer-text p {
