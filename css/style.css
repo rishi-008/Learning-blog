@@ -65,20 +65,18 @@ main {
 }
 
 .blogs-available {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
+    /* display: flex; */
+    /* justify-items: center; */
     /* flex-direction: column; */
-    /* display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 30vh auto auto auto 40vh;
-    grid-template-areas: 
-        "mimg mimg mimg"
-        "simg simg simg"
-        "simg2 simg2 simg2"
-        "simg3 simg3 simg3"
-        "simg4 simg4 simg4"
+    display: grid;
+    /* grid-template-columns: 10vw 80vw 10vw; */
+    /* grid-template-rows: 30vh auto auto auto 40vh; */
+    /* grid-auto-rows: 35vh; */
+    /* grid-template-areas: 
+        "mimg"
+        "simg"
+        "simg2"
+        "simg3"
         ; */
     /* height: 20vh; */
     /* max-height: 80vh; */
@@ -89,15 +87,17 @@ main {
 }
 
 .large-img-blog-container {
-    margin: 0;
-    padding: 0;
     /* height: 30vh;
     width: 100vw; */
     /* grid-column: span 3; */
-    position: relative;
     /* display: grid; */
     grid-area: mimg;
+    position: relative;
 }
+
+/* .imageAndTextoverlay {
+    
+} */
 
 .large-blog-summary {
     display: flex;
