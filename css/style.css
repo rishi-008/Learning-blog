@@ -74,7 +74,7 @@ main {
     /* flex-direction: column; */
     display: grid;
     /* grid-template-columns: 10vw 80vw 10vw;  */
-    grid-template-rows: 30vh auto auto auto auto;
+    grid-template-rows: 30vh auto auto auto auto auto auto auto;
     /* grid-auto-rows: 35vh; */
     grid-template-areas: 
         "mimg"
@@ -82,6 +82,9 @@ main {
         "simg2"
         "simg3"
         "simg4"
+        "simg5"
+        "simg6"
+        "simg7"
         ;
     /* height: 20vh; */
     /* max-height: 80vh; */
