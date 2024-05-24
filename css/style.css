@@ -17,10 +17,6 @@ h1 {
     gap: 2em;
 }
 
-.makeBlogVisible {
-    display: block;
-}
-
 a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -124,7 +120,7 @@ time, h2, p {
     grid-area: simg;
 }
 
-.small-img-blog-holder, .small-img-blog-holder-2, .small-img-blog-holder-3, .small-img-blog-holder-4 {
+.small-img-blog-holder, .small-img-blog-holder-2, .small-img-blog-holder-3, .small-img-blog-holder-4, .small-img-blog-holder-5, .small-img-blog-holder-6, .small-img-blog-holder-7{
     padding: 2em 1em 2em 1em;
     /* height: 30vh;
     width: 92vw; */
@@ -145,6 +141,10 @@ time, h2, p {
 
 .small-img-blog-holder-4, .small-img-blog-holder-5, .small-img-blog-holder-6, .small-img-blog-holder-7 {
     display: none;
+}
+
+.makeElementVisible {
+    display: block;
 }
 
 .large-img {
