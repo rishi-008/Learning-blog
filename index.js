@@ -10,4 +10,5 @@ loadMorePostsBtn.addEventListener('click', () => {
             blogHolder.classList.toggle('makeElementVisible');
         }
     }
+    loadMorePostsBtn.textContent = "Show Less";
 });
