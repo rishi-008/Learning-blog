@@ -12,3 +12,11 @@ loadMorePostsBtn.addEventListener('click', () => {
     }
     loadMorePostsBtn.textContent = "Show Less";
 });
+
+const blogHolders = document.querySelectorAll('.small-img-blog-holder, .small-img-blog-holder-2, .small-img-blog-holder-3, .small-img-blog-holder-4, .small-img-blog-holder-5, .small-img-blog-holder-6, .small-img-blog-holder-7');
+
+blogHolders.forEach(blogHolder => {
+    blogHolder.addEventListener('click', () => {
+        window.location.href = 'blogPage.html';
+    });
+});
