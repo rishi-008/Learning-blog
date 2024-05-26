@@ -188,6 +188,12 @@ time, h2, p {
 .blog-description-hero {
     font-size: 0.85rem;
     color: lightgray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .small-img-1, .small-img-2, .small-img-3, .small-img-4, .small-img-5, .small-img-6, .small-img-7 {
