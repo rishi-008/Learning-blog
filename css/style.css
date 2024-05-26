@@ -198,6 +198,10 @@ time, h2, p {
     margin: 0;
 }
 
+@media (min-width: 320px) {
+    
+}
+
 @media (min-width: 768px) {
     .blogs-available {
         /* display: flex; */
