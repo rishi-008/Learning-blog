@@ -120,6 +120,28 @@ time, h2, p {
     gap: 1em;
 }
 
+.small-blog-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: -20px;
+}
+.blog-upload-time-small {
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.blog-description {
+    font-size: 0.85rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 .small-img-blog-holder-2 {
     grid-area: simg2;
 }
