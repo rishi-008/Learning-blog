@@ -117,7 +117,7 @@ time, h2, p {
     width: 92vw; */
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .small-blog-summary {
@@ -167,7 +167,7 @@ time, h2, p {
 }
 
 .makeElementVisible {
-    display: block;
+    display: flex;
 }
 
 /* blog that'll be in the hero */
@@ -272,7 +272,7 @@ time, h2, p {
     }
 
     .small-img-blog-holder-4, .small-img-blog-holder-5, .small-img-blog-holder-6 {
-        display: block;
+        display: flex;
     }
 
     .large-img {
