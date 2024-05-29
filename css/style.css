@@ -360,13 +360,13 @@ time, h2, p {
 
 @media (min-width: 1050px) {
     .large-img {
-        height: 45vh;
+        height: 50vh;
     }
 
     .blogs-available {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: 45vh auto auto;
+        grid-template-rows: 50vh auto auto;
         grid-template-areas: 
             "mimg mimg mimg mimg"
             "simg simg2 simg3 simg4"
@@ -385,7 +385,7 @@ time, h2, p {
     }
 
     .large-blog-summary {
-        top: 20rem;
+        top: 15rem;
     }
 }
 @media (min-width: 2560px) {
