@@ -360,13 +360,13 @@ time, h2, p {
 
 @media (min-width: 1050px) {
     .large-img {
-        height: 55vh;
+        height: 45vh;
     }
 
     .blogs-available {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: 55vh auto;
+        grid-template-rows: 45vh auto;
         grid-template-areas: 
             "mimg mimg mimg mimg"
             "simg simg2 simg3 simg4"
@@ -377,5 +377,16 @@ time, h2, p {
 
     .small-img-blog-holder-5, .small-img-blog-holder-6 {
         display: none;
+    }
+
+    .blog-description-hero {
+        width: 40vw;
+    }
+
+    .large-blog-summary {
+        top: 20rem;
+        left: 1rem;
+        padding: 1rem;
+        z-index: 3;
     }
 }
