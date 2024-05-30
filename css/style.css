@@ -388,6 +388,28 @@ time, h2, p {
         top: 15rem;
     }
 }
+
+@media (min-width: 1250px) {
+    .large-img {
+        height: 60vh;
+    }
+
+    .blogs-available {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: 60vh auto auto;
+        grid-template-areas: 
+            "mimg mimg mimg mimg mimg"
+            "simg simg2 simg3 simg4 simg5"
+            "simg6 . . . ."
+            ;
+        margin: 0;
+        padding: 0;
+    }
+    .large-blog-summary {
+        top: 25rem;
+    }
+}
 @media (min-width: 2560px) {
     .large-img {
         height: 50vh;
