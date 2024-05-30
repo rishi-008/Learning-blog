@@ -11,10 +11,31 @@ h1 {
     color: #333;
 }
 
+
+header nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar{
     list-style: none;
     display: flex;
-    gap: 2em;
+    gap: 0.5em;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -27,14 +48,17 @@ a {
 
 header {
     display: flex;
-    justify-content: space-between;
     margin: 0 1em 0 1em;
+    height: 4rem;
+    gap: 1.7rem;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
