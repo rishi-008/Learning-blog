@@ -37,6 +37,7 @@ header nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0.5rem;
 }
 
 .navbar-horizontal-display-layout li {
@@ -341,6 +342,29 @@ time, h2, p {
     }
 }
 
+@media (min-width: 768px) {
+    .navbar-horizontal-display-layout{
+        /* DON'T DELETE THIS CODE THAT IS BELOW */
+        /* add the below styling when I'm displaying the navbar horizontally */
+        list-style: none;
+        display: flex;
+        gap: 0.5em;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-horizontal-display-layout li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-horizontal-display-layout i {
+        display: none;
+    }
+}
+
 @media (min-width: 900px) {
     .blogs-available {
         /* display: flex; */
@@ -441,10 +465,30 @@ time, h2, p {
     .large-blog-summary {
         top: 25rem;
     }
+    header {
+        height: 4.5rem;
+    }
 }
 @media (min-width: 2560px) {
     .large-img {
         height: 50vh;
+    }
+
+    header {
+        height: 5.5rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        font-size: 1.5rem;
+    }
+
+    header .nav-logo i {
+        font-size: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .large-blog-summary {
