@@ -11,6 +11,19 @@ h1 {
     color: #333;
 }
 
+header > nav > .navbar-horizontal-display-layout {
+    padding-right: 0.5rem;
+}
+
+header > .nav-logo > i {
+    font-size: 0.9rem;
+}
+
+header > .nav-logo > h1 {
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #333;
+}
 
 header nav {
     display: flex;
@@ -51,19 +64,20 @@ a {
     font-weight: 400;
     text-decoration: none;
     color: black;
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 header {
     display: flex;
-    margin: 0 1em 0 1em;
-    height: 4rem;
+    padding: 0 0 0 0.5rem;
+    height: 3.3rem;
     /* gap: 1.7rem; */
     justify-content: space-between;
     align-items: center;
     /* the header disappears without adding the bottom width because before we were just relying on the display: block property */
     position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
     background-color: white;
     z-index: 10;
@@ -103,7 +117,7 @@ footer {
 main {
     margin: 0;
     padding: 0;
-    margin-top: 4rem;
+    margin-top: 3.3rem;
 }
 
 .blogs-available {
