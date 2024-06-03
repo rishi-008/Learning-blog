@@ -60,6 +60,14 @@ header {
     height: 4rem;
     /* gap: 1.7rem; */
     justify-content: space-between;
+    align-items: center;
+    /* the header disappears without adding the bottom width because before we were just relying on the display: block property */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 10;
+    overflow: auto;
 }
 
 .nav-logo {
@@ -95,6 +103,7 @@ footer {
 main {
     margin: 0;
     padding: 0;
+    margin-top: 4rem;
 }
 
 .blogs-available {
@@ -349,8 +358,8 @@ time, h2, p {
         list-style: none;
         display: flex;
         gap: 0.5em;
-        font-size: 1em;
-        margin: 0;
+        font-size: 1.2rem;
+        /* margin: 0; */
         padding: 0;
     }
     
